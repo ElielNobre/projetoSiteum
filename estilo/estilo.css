@@ -1,12 +1,22 @@
-            body {
-                background-color: antiquewhite;
-            }
+            body {}
             /*configurações do cabeçalho*/
             
             div#cabecalho {
                 text-align: center;
+                width: 1000px;
+                height: 100px;
+                background-color: #C3C;
             }
-            /*Fim das configurações do cabeçalho*/
+            /*Fim das configurações do cabeçalho
+
+            /*configurações rodape*/
+            
+            div#rodape {
+                width: 1000px;
+                height: 100px;
+                background-color: #C3C;
+            }
+            /*fim de rodape*/
             /*Configurações do Menu*/
             
             nav#menu ul {
@@ -40,4 +50,28 @@
                 border-bottom: none;
                 text-decoration: none;
             }
-            /*configurações da barra lateral*/
+            /*corpo*/
+            
+            div#corpo {
+                width: 1000 px;
+                height: 100px;
+                margin-top: 0;
+                margin-top: 0;
+                margin-left: auto;
+                margin-bottom: 0;
+                margin-right: auto;
+                background-color: rgb(48, 162, 197);
+            }
+            
+            div#corpo {
+                width: 1000px;
+                height: 500px;
+            }
+            /*lateral do corpo */
+            
+            div#lateral {
+                width: 300px;
+                height: 200px;
+                float: right;
+                background-color: azure;
+            }
