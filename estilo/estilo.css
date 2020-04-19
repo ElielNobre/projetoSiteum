@@ -1,11 +1,18 @@
-            body {}
+            body {
+                background-color: #444;
+            }
             /*configurações do cabeçalho*/
+            
+            nav#menu {
+                text-align: center;
+                width: 1000px;
+                height: 200px;
+                background-color: #C3C;
+            }
             
             div#cabecalho {
                 text-align: center;
-                width: 1000px;
-                height: 100px;
-                background-color: #C3C;
+                background-color: aqua;
             }
             /*Fim das configurações do cabeçalho
 
@@ -26,7 +33,7 @@
             
             nav#menu li {
                 display: inline-block;
-                padding: 5px;
+                padding: 10px;
                 margin: 2px;
                 transition: background-color 1s;
                 transition: padding 1s
@@ -53,8 +60,8 @@
             /*corpo*/
             
             div#corpo {
-                width: 1000 px;
-                height: 100px;
+                width: 250 px;
+                height: 200px;
                 margin-top: 0;
                 margin-top: 0;
                 margin-left: auto;
