@@ -1,9 +1,14 @@
 body {}
 
+.cabecalho {}
+
+.rodapa {}
+
 .principal {
     display: grid;
-    grid-template-columns: 75vh 25vh;
+    grid-template-columns: 75% 25%;
     grid-template-rows: 70vh 10vh;
+    margin: auto;
     /* grid-template-areas: "Area nova inserida";*/
 }
 
