@@ -2,8 +2,8 @@ body {}
 
 .principal {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40vh 40vh;
+    grid-template-columns: 75vh 25vh;
+    grid-template-rows: 70vh 10vh;
     /* grid-template-areas: "Area nova inserida";*/
 }
 
