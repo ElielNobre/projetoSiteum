@@ -18,14 +18,31 @@ nav#menu ul {
 
 nav#menu li {
     display: inline-block;
-    padding: 5px;
-    margin: 2px;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav#menu a {
+    text-decoration: none;
+}
+
+div.menu {
+    width: 100%;
+    height: 100px;
+    background-color: #FFF;
+    border-bottom: 1px black solid;
+    /* background-image: -moz-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);
+    background-image: -o-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);*/
 }
 
 
 /*Fim de Menu de navegação*/
 
-.rodape {}
+.rodape {
+    border-top: 1px black solid;
+}
 
 
 /*Corpo da pagina*/
@@ -33,8 +50,9 @@ nav#menu li {
 .principal {
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 70vh 10vh;
+    grid-template-rows: 70vh;
     margin: auto;
+    ;
     /* grid-template-areas: "Area nova inserida";*/
 }
 
@@ -42,26 +60,48 @@ nav#menu li {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row: 1;
-    background-color: blue;
+    background-color: #FFF;
+    /* background-image: -moz-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);
+    background-image: -o-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);*/
 }
 
 .lateral {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row: 1;
-    background-color: red;
+    background-color: #FFF;
+    border-left: 1px black solid;
+    /* background-image: -moz-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);
+    background-image: -o-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);*/
 }
 
 .recomendados {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 1;
     grid-row: 2;
-    background-color: green;
+    background-color: #FFF;
+    border-top: 1px black solid;
+    height: 10vh;
+    /* background-image: -moz-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);
+    background-image: -o-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);*/
 }
 
-.contatos {
-    grid-column-start: 2;
+
+/*.contatos {
+        grid-column-start: 2;
     grid-column-end: 3;
     grid-row: 2;
-    background-color: pink;
-}
+    background-color: #FFF;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+     background-image: -moz-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);
+    background-image: -o-linear-gradient(white, blue);
+    background-image: -webkit-linear-gradient(white, blue);
+}*/
