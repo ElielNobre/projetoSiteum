@@ -6,7 +6,8 @@ body {}
 /*Menu de navegação*/
 
 nav#menu {
-    display: block
+    display: flex;
+    flex-wrap: column;
 }
 
 nav#menu ul {
@@ -20,6 +21,9 @@ nav#menu li {
     display: inline-block;
     padding: 10px;
     margin: 5px;
+    border: 1px solid #25692a;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 nav#menu a {
@@ -105,3 +109,19 @@ div.menu {
     background-image: -o-linear-gradient(white, blue);
     background-image: -webkit-linear-gradient(white, blue);
 }*/
+
+
+/*Configuarção paginas dos artigos*/
+
+div.pagina {
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+div.pagina h1 {
+    text-align: center;
+}
+
+div.pagina p {
+    text-align: justify;
+}
