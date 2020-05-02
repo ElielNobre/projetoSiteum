@@ -71,6 +71,16 @@ div.menu {
     background-image: -webkit-linear-gradient(white, blue);*/
 }
 
+form#cadastro {
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+form#cadastro p {
+    margin-left: 15%;
+}
+
 .lateral {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -125,11 +135,12 @@ div.pagina h1 {
 div.pagina p {
     text-align: justify;
 }
-p{
+
+p {
     font-size: 12pt;
 }
 
-p.citacao{
+p.citacao {
     font-size: 10pt;
     margin-left: 20%;
 }
