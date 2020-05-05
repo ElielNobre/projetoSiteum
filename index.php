@@ -35,16 +35,21 @@
             7 X 2 = 14
             1 + 4 = 5 -->
             <p>Cadastro</p>
-            <form id="cadastro">
+            <form id="cadastro" method="POST" action="projeto.php">
                 <p>
-                    Nome:<input type="text">
+                    <label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="30" maxlenght="30"/>
                 </p>
                 <p>
-                    Data de nascimento:<input type="date">
+                   <label for="ndata"> Data de nascimento:</label><input type="date" name="datanascimento" id="ndata"/>
                 </p>
+               <fieldset id="sexos">
                 <p>
-                    Sexo<input type="radio">
+                     Sexo:<br/>
+                    <label for="masculino"> Masculino:</label><input type="radio" name="tsexo" id="masculino"   checked><br/>
+                    <label for="feminino"> Feminino:</label> <input type="radio" name="tsexo" id="feminino">
                 </p>
+                </fieldset>
+                <input type="submit" value="Cadastrar">
             </form>
 
 
