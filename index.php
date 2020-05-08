@@ -35,7 +35,7 @@
             7 X 2 = 14
             1 + 4 = 5 -->
             <p>Cadastro</p>
-            <form id="cadastro" method="POST" action="projeto.php">
+            <form id="cadastro" method="GET" action="projeto.php" >
                 <p>
                     <label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="30" maxlenght="30"/>
                 </p>
