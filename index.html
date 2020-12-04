@@ -19,53 +19,39 @@
             </ul>
         </nav>
     </div>
-    <div class="principal">
-        <div class="conteudo">Conteúdo
-
-            <form id="padraotesla">
-                <p>Insira um Número</p>
-                <input type="Insira um número">
-            </form>
-            <!--O padrao é: 1 , 2, 4, 8, 7, 5
-            energia livre 3, 6, 9
-            1 X 2 = 4
-            4 X 2 = 8
-            8 X 2 = 16
-            1 + 6 = 7
-            7 X 2 = 14
-            1 + 4 = 5 -->
+    
             <p>Cadastro</p>
-            <form id="cadastro" method="GET" action="projeto.php" >
+            <form id="cadastro">
                 <p>
-                    <label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="30" maxlenght="30"/>
+                    <label for="cnome">Nome:</label>
+                    <input type="text" id="cnome" size="30" maxlenght="30"/>
                 </p>
                 <p>
-                   <label for="ndata"> Data de nascimento:</label><input type="date" name="datanascimento" id="ndata"/>
+                   <label for="ndata"> Ano de nascimento:</label>
+                   <input type="text" id="ndata"/>
                 </p>
-               <fieldset id="sexos">
-                <p>
-                     Sexo:<br/>
-                    <label for="masculino"> Masculino:</label><input type="radio" name="tsexo" id="masculino"   checked><br/>
-                    <label for="feminino"> Feminino:</label> <input type="radio" name="tsexo" id="feminino">
-                </p>
-                </fieldset>
-                <input type="submit" value="Cadastrar">
+                <input type="Button" value="Cadastrar" onclick="cadastrar();">
             </form>
+
+
             <div id="a">O seu nome...</div>
             <div id="b">A sua data de nascimento... </div>
-            <div id="c">O seu sexo... </div>
             <div id="d"></div>
-            <script>
-
-            var nome = window.document.getElementById('tnome');
-            var datnasc = window.document.getElementById('datanascimento');
-            var sexo =window.document.getElementById('tsexo');
-
-            nome.innerHTML = `<h3>Nome: ${nome}.</h3>`; 
-            datnasc.innerHTML = `<h3>A data de nascimento: ${datnasc}</h3>`;
-            sexo.innerHTML = `<h3>Sexo: ${sexo}.</h3>`;
-
-            "<h1>Cadastrado com sucesso</h1>"
+                
+            <script>  
+            function cadastrar(){
+            
+                var nome = window.document.getElementById('cnome');
+                var datnasc = window.document.getElementById('ndata');
+                var name = String(nome.value);
+                var ano = String(datnasc.value);
+                var jnome = window.document.getElementById('a');
+                var jnasc = window.document.getElementById('b');
+                var jboasvindas = window.document.getElementById('d');
+                    jnome.innerHTML = `Nome: ${name}`; 
+                    jnasc.innerHTML = `O ano de nascimento é: ${ano}`;
+                    jboasvindas.innerHTML = `Cadastrado com sucesso`;
+                }
             </script>
             
             <h1><a href="index.php">Voltar</a></h1>
