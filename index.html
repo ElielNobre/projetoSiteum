@@ -51,7 +51,24 @@
                 </fieldset>
                 <input type="submit" value="Cadastrar">
             </form>
+            <div id="a">O seu nome...</div>
+            <div id="b">A sua data de nascimento... </div>
+            <div id="c">O seu sexo... </div>
+            <div id="d"></div>
+            <script>
 
+            var nome = window.document.getElementById('tnome');
+            var datnasc = window.document.getElementById('datanascimento');
+            var sexo =window.document.getElementById('tsexo');
+
+            nome.innerHTML = `<h3>Nome: ${nome}.</h3>`; 
+            datnasc.innerHTML = `<h3>A data de nascimento: ${datnasc}</h3>`;
+            sexo.innerHTML = `<h3>Sexo: ${sexo}.</h3>`;
+
+            "<h1>Cadastrado com sucesso</h1>"
+            </script>
+            
+            <h1><a href="index.php">Voltar</a></h1>
 
 
         </div>
