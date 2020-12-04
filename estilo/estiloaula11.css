@@ -1,0 +1,38 @@
+body{
+    background:lightgrey;
+}
+#cabecalho{
+    text-align: center;    
+    border: 1px solid black;
+    border-radius: 50px;
+}
+#corpo{
+ margin-left: 20px auto auto auto;
+}
+img{
+    margin-left:100px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}
+.ultimolink{
+    text-align: left;
+}
+#area{
+    border: 1px solid black;
+    border-radius: 50px;
+    margin:150px;
+    padding:150px; 
+    font-size: 40pt;
+    text-align: center;
+}
+#area210{
+    border: 1px solid black;
+    border-radius: 50px;
+    margin:150px;
+    padding:30px;
+}

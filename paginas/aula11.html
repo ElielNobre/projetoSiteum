@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/estiloaula11.css">
+    <script src="interacao.js"></script>
+    <title>Document</title>
+</head>
+<body> 
+<div id="cabecalho">
+    <h1>Curso em Vídeo</h1>
+    <h3>Aula 10</h3>
+</div>
+<div id="corpo">
+
+    <div id="area">
+        interaja...
+    </div>
+
+    <script>   
+        var a = window.document.getElementById('area');
+        a.addEventListener('click',clicar);
+        a.addEventListener('mouseenter',entrar);
+        a.addEventListener('mouseleave',saiu);
+        function entrar() {
+            a.innerText= 'Entrou';
+            a.style.background = 'green';
+        }
+        function clicar() { 
+            a.innerText ='Clicou';
+            a.style.background = 'pink';
+        }
+        function saiu(){
+            a.innerText = 'Saiu';
+            a.style.background='red';
+        }
+    </script>
+    
+    <div id="area210">
+        <h1>Somando Números</h1>
+        <label>Digite um número:</label>
+        <input type="text" id="txt1">
+        <br/>
+        <br/>
+        <label>Digite outro numero:</label>
+        <input type="text" id="txt2">
+        <br/>
+        <br/>
+        <input type="Button" id="somar" value="Somar" onclick="somar()">
+        <br/>
+        <br/>
+        <div id="resposta">Resultado</div>
+   
+
+        <script>
+            function somar(){
+                var tnt1 = window.document.getElementById('txt1');
+                var tnt2 = window.document.getElementById('txt2');
+                var res = window.document.getElementById('resposta');
+                var n1 = Number(tnt1.value);
+                var n2 = Number(tnt2.value);
+                var soma = n1 + n2;
+                res.innerHTML = `A soma entre ${n1} e ${n2} é: ${soma}`;
+            }
+        </script>
+     </div>
+</div>
+
+<div id="rodape">
+<p>
+    <a href="index.html">
+        Tela Inicial 
+    </a>
+    <a href="aula11.html">
+        Proxima Aula 
+    </a>
+</p>
+</div>
+</body>
+</html>

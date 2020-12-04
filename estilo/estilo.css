@@ -21,7 +21,8 @@ nav#menu li {
     display: inline-block;
     padding: 10px;
     margin: 5px;
-    border: 1px solid #25692a;
+    border: 1px solid black;
+    border-radius: 100px;
     cursor: pointer;
     font-size: 18px;
 }
@@ -73,8 +74,10 @@ div.menu {
 
 form#cadastro {
     border: 1px solid black;
-    margin-left: 10%;
-    margin-right: 10%;
+    border-radius: 50px 0px 50px 0px;
+    margin-left: 100px;
+    background:lightgrey;
+    width:600px;
 }
 
 form#cadastro p {
