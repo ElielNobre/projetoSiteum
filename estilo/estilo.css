@@ -2,10 +2,10 @@ body {
     background:rgb(156, 156, 228);
 }
 
-.menu {}
-
-
-/*Menu de navegação*/
+h2, h4{
+    text-align:center
+}
+/*Menu de navegação
 
 nav#menu {
     background:rgb(156, 156, 228);
@@ -13,7 +13,7 @@ nav#menu {
     flex-wrap: column;
 }
 
-nav#menu ul {
+/*nav#menu ul {
     list-style: none;
     position: absolute;
     top: 0px;
@@ -42,8 +42,8 @@ div.menu {
     /* background-image: -moz-linear-gradient(white, blue);
     background-image: -webkit-linear-gradient(white, blue);
     background-image: -o-linear-gradient(white, blue);
-    background-image: -webkit-linear-gradient(white, blue);*/
-}
+    background-image: -webkit-linear-gradient(white, blue);
+}*/
 
 
 /*Fim de Menu de navegação*/
