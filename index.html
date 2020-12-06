@@ -20,7 +20,7 @@
     </div>
     
             <p>Cadastro</p>
-            <form id="cadastro">
+            <form class="cadastro">
                 <p>
                     <label for="cnome">Nome:</label>
                     <input type="text" id="cnome" size="30" maxlenght="30"/>
@@ -31,43 +31,23 @@
                 </p>
                 <input type="Button" value="Cadastrar" onclick="cadastrar()">
             </form>
-
-            
             <div id="a">O seu nome...</div>
             <div id="b">A sua data de nascimento... </div>
-            <div id="d"></div>
-                
-            <script>  
-            function cadastrar(){
-            
-                var nome = window.document.getElementById('cnome');
-                var datnasc = window.document.getElementById('ndata');
-                var name = String(nome.value);
-                var ano = Number(datnasc.value);
-                var jnome = window.document.getElementById('a');
-                var jnasc = window.document.getElementById('b');
-                var jboasvindas = window.document.getElementById('d');
-                    
-                
-                if (ano >=2002){
-                    jnome.innerHTML = `Nome: ${name}`; 
-                    jnasc.innerHTML = `O ano de nascimento é: ${ano}`;
-                    jboasvindas.innerHTML = `Você é menor de idade não pode se cadastrar`;
-                }else if(ano <=1945){
-                    jnome.innerHTML = `Nome: ${name}`; 
-                    jnasc.innerHTML = `O ano de nascimento é: ${ano}`;
-                    jboasvindas.innerHTML = `Você é velho Demais`;
-                }else{
-                    jnome.innerHTML = `Nome: ${name}`; 
-                    jnasc.innerHTML = `O ano de nascimento é: ${ano}`;
-                    jboasvindas.innerHTML = `Cadastrado com sucesso`;}
-                }
-            </script>
-            
+            <div id="d"></div>        
             <p><a href="index.html">Voltar</a></p>
+    <form class="cadastro">
+        <p>Lista de aulas</p>
+        <ol>
+            <li><a href="/paginas/aula10.html">Aula 10</a></li>
+            <li><a href="/paginas/aula11.html">Aula 11</a></li>
+            <li><a href="/paginas/aula12.html">Aula 12</a></li>
+        </ol>
+    </form>
+    <br/>
     <div class="rodape">
         <h3>RodaPe</h3>
     </div>
+<script src="index.js"></script>  
 </body>
 
 </html>
