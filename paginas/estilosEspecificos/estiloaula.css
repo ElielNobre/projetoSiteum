@@ -32,3 +32,10 @@ footer li{
     list-style: none;
     display: inline-block;
 }
+img#mensagem{
+    width: 300px;
+    margin: 20%;
+    border: 1px solid;
+    border-radius:25px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.603);
+}
