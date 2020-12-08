@@ -27,10 +27,15 @@ footer a{
     border-radius: 25px 25px 25px 25px;
     padding: 10px;
     text-decoration: none;
+    background: white;
 }
 footer li{
     list-style: none;
     display: inline-block;
+}
+#boasvindas p{
+    text-align: center;
+    font-size: 40px;
 }
 img#mensagem{
     width: 300px;
@@ -38,4 +43,10 @@ img#mensagem{
     border: 1px solid;
     border-radius:25px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.603);
+}
+img#imagem{
+    width: 60%;
+    margin: 25%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px 10px rgba(3, 3, 3, 0.582);
 }

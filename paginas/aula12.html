@@ -6,35 +6,27 @@
     <link rel="stylesheet" href="estilosEspecificos/estiloaula.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="vermensagem()">
    <header>
        <h1>Título</h1>
    </header> 
-   <section>
-       <div>
-            <p>Digite o nome:
-                <input type="text" id="nome" maxlength="100">
-            </p>
-            <p>Digite sua idade:
-                <input type="number" id="idade">    
-            </p>
-            <p>Qual o seu sexo:
-                <select id="sexo">
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outros">Outros</option>
-                </select>
-            </p>
-            <input type="button" value="Ver"  onclick="vermensagem()">
+   <section id="secao">
+       <div id="msg">
+        <h4>Aqui vai aparecer que horas são</h4> 
        </div>
        <div>
-           <img> 
+           <img id="imagem" src="../imagens/bomdia.png">
+       </div>
+       <div id="boasvindas">
+            <p>Teste</p>
        </div>
    </section>
    <br/>
+   <section>
    <p>O if é usado para condições entre sim e não e tem a suas vantagens e desvantagens.</p>
    <p>Com condições fixas podemos com o Switch case. Não é apropriado para representar intervalos de valores, nesse caso é melhor o 'if'.</p>
    <img src="../imagens/switchCase.png" width="200px">
+   </section>
    <footer>
         <p><a href="../index.html">Tela Inicial</a></p> 
         <p>
