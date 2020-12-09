@@ -3,7 +3,7 @@ var msg = window.document.getElementById('msg');
 var imagem = window.document.getElementById('imagem');
 var boasvindas = window.document.getElementById('boasvindas');
 var data = new Date();
-var hora = 8 /*data.getHours();*/
+var hora = data.getHours();
 
 msg.innerHTML = `<h4>Agora são ${hora} horas.</h4>`
 
