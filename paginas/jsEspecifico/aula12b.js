@@ -43,13 +43,13 @@ else if(id > 50 && sex === 'Masculino'){
 mensagem.innerHTML = `<p>Nome: ${name}, do sexo ${sex} e com ${id} anos;</p>`;
 
     if(jogo==='fortnite'){
-            ilustracao.src = '../imagens/aula12a/bomdia.png';
+            ilustracao.src = '../imagens/aula12b/fortnite.png';
     }else if(jogo === 'free'){
-        ilustracao.src = '../imagens/aula12a/bomdia.png';
+        ilustracao.src = '../imagens/aula12b/freefire.png';
     }else if (jogo === 'fg'){
-        ilustracao.src = '../imagens/aula12a/bomdia.png';
+        ilustracao.src = '../imagens/aula12b/fallguys.png';
     }else if (jogo === 'mc'){
-        ilustracao.src = '../imagens/aula12a/bomdia.png';
+        ilustracao.src = '../imagens/aula12b/minecraft.png';
     }
 
 }
