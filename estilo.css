@@ -1,0 +1,48 @@
+body{
+    background:rgb(179, 45, 89);
+} 
+ #cabecalho{
+    text-align: center;
+    background:rgb(209, 121, 151);
+    border-radius: 0px 50px 0px 50px ;
+}
+ #menuprincipal li{  
+    list-style: none;
+    display: inline-block;
+    margin: 2%;
+    padding: 5px;
+    border-left: 2px black solid;
+    border-top-left-radius: 10px;;
+}
+#menuprincipal li a{
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+#cabecalho h1{
+    text-align: center;
+}
+#apresentacao{
+    text-align: center;
+}
+#apresentacao li{
+    width:15%;
+    display: inline-block;
+    text-decoration: none;
+}
+#apresentacao img{
+    width:100%;
+}
+#corpo{
+    display:grid;
+    grid-template-columns:60% 25%;
+}
+#conteudo{
+    margin-left:30%;
+}
+#nossarede{
+    margin-left: 30%;
+}
+#rodape{
+    text-align: center
+}
