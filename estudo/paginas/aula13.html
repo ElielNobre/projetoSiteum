@@ -7,15 +7,56 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Aula 13</h1>
+    <div id="corpo">
+
+    <h1>Aula 13 e 14</h1>
     <h2>estrutura de repetição</h2>
-    <p>Estrutura de repetição é útil para automatizar processos repetivos</p>
+    <p>Estrutura de repetição é útil para automatizar processos repetivos. nessa aula veremos p 'While' e o 'do... while' e o 'for' e o 'for...in'.</p>
+
+    <figcaption>
+    <legend>As duas formas</legend>
+    <img src="../imagens/whileforIn.png" class="fotoestudo">
+    <img src="../imagens/forewhile.png" class="fotoestudo">
+    </figcaption> 
+
+    <p>O visual Studio Code tem um depurador, executando as repetições passo a passo, mostrando as possíveis falhas, é muito bom para observar o comportamento das funções, pois o seu program pode ter erros de sintaxe e também de lógica.</p> 
+
+    </div>
+    <div id="exercicio">
+        <h3>Exercício de repetições</h3>
+        <p>
+        Qual o número limite:<input type="number" id="numero">
+        </p>
+        <p>
+        Passo-a-passo:<input type="number" id="passo">
+        </p>
+        <input type="button" id="botao" value="Contar" onclick="contar()">
+        <div id="resposta">
+            Resposta
+        </div>
+    </div>
+    <script>
+        function contar() {        
+        var numero = window.document.getElementById('numero')
+        var passo = window.document.getElementById('passo')
+        var resposta = window.document.getElementById('resposta')
+
+        var num = Number(numero.value)
+        var pas = Number(passo.value)
+        var res = String(resposta.value)
+
+            for(var c=0; c <= num; c= c+pas){
+                res.innerHTML = `<p>${c}</p>`;
+            }
+
+        }
+    </script>
 <footer>
 <ul>
     <li><a href="../estudo.html">Tela Inicial</a></li>
     <li><a href="#">aula 14</a></li>
 </ul>
 </footer>
-<script src="jsEspecifico/aula13.js"></script>
+<scripte src="jsEspecifico/aula13.js"></scripte>
 </body>
 </html>
