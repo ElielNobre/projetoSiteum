@@ -24,39 +24,21 @@
     </div>
     <div id="exercicio">
         <h3>Exercício de repetições</h3>
-        <p>
-        Qual o número limite:<input type="number" id="numero">
-        </p>
-        <p>
-        Passo-a-passo:<input type="number" id="passo">
-        </p>
-        <input type="button" id="botao" value="Contar" onclick="contar()">
-        <div id="resposta">
-            Resposta
+        <p>Fim:<input type="number" id="txtf"></p>
+        <p>Incio:<input type="number" id="txti"></p>
+        <p>Passo:<input type="number" id="txtp"></p>
+        <p><input type="button" id="botao" value="Contar" onclick="contar()"></p>
+        <div id="res">
+            contando...
         </div>
     </div>
-    <script>
-        function contar() {        
-        var numero = window.document.getElementById('numero')
-        var passo = window.document.getElementById('passo')
-        var resposta = window.document.getElementById('resposta')
-
-        var num = Number(numero.value)
-        var pas = Number(passo.value)
-        var res = String(resposta.value)
-
-            for(var c=0; c <= num; c= c+pas){
-                res.innerHTML = `<p>${c}</p>`;
-            }
-
-        }
-    </script>
+    
 <footer>
 <ul>
     <li><a href="../estudo.html">Tela Inicial</a></li>
     <li><a href="#">aula 14</a></li>
 </ul>
 </footer>
-<scripte src="jsEspecifico/aula13.js"></scripte>
+<script src="jsEspecifico/aula13.js"></script>
 </body>
 </html>
