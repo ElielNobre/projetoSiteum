@@ -14,9 +14,18 @@ function contar() {
         let end = Number(fim.value)
         let pass = Number(passo.value)
 
-        for (let i = begin;i <= end;i += pass){
-          res.innerHTML += `&#128073;&#127995;${i}<br/>`
-        }
-        res.innerHTML += '<h1>&#9997;&#127997;</h1>'
-   }
+        if(end > begin){
+               for (let i = begin;i <= end;i += pass){
+                    res.innerHTML += `&#128073;&#127995;${i}<br/>`
+               }
+               res.innerHTML += '<h1>&#9997;&#127997;</h1>'
+         }else if(end < begin){
+               for (let i = begin;i >= end;i -= pass){
+                    res.innerHTML += `&#128073;&#127995;${i}<br/>`
+               }
+               res.innerHTML += '<h1>&#9997;&#127997;</h1>'
+         }else{
+               res.innerHTML = '&#129300; Já deu.'
+         }
+     }
  }
