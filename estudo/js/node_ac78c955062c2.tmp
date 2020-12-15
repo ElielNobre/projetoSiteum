@@ -56,13 +56,13 @@ var v = function(x,q){
 console.log(v(12,30))
 
 function fatorial(num){
-    let fat = 1
-    for (let i= num; i > 1; i--){
+    fat = 1
+    for (let i= num; num > 1; i--){
         fat = fat * i
     }
         return fat;
 }
 
-console.log(`O fatorial de 5 é: ${fatorial(5)}`)
+console.log(fatorial(5))
 
 

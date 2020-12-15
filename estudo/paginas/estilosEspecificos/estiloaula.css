@@ -41,6 +41,10 @@ footer li{
     list-style: none;
     display: inline-block;
 }
+#rodape p{
+    text-align: center;
+    font-size:12pt;
+}
 #boasvindas p{
     text-align: center;
     font-size: 40px;
