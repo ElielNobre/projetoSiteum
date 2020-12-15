@@ -1,0 +1,32 @@
+body{
+    background:rgb(137, 161, 126);
+}
+h1, p{
+    margin-left:5%;
+}
+fieldset{
+    border-radius: 5px;
+    margin:auto;
+    width:50%;
+
+}
+fieldset h3{
+text-align: center;
+}
+fieldset input{
+    width:100px;
+}
+#rodape{
+    text-align: center;
+    margin:10px;
+}
+#rodape a{
+    border:1px solid black;
+    padding:3px;   
+    border-radius: 10px;
+    text-decoration: none;
+}
+#rodape :hover{
+    background-color:red;
+    color:white;
+}
