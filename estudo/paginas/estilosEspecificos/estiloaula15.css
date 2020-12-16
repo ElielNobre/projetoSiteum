@@ -1,10 +1,24 @@
-#cabecalho{
-    border: 1px solid;
-    border-radius:25px;
+body{
+    background: rgb(1, 189, 223);
+}
+section{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10%;    
+    padding:2%;
 }
 h1{
-    text-align: center;
+    text-align:center;
 }
-p{
-    margin-left: 5%;
+
+fieldset{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom:5%;
+}
+#rodape p{
+    text-align:center;
+}
+#exercicio p{
+    text-align:center;
 }
