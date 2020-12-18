@@ -1,9 +1,9 @@
 body{
-    background: linear-gradient(to right, rgb(229, 150, 240) , rgb(240, 110, 110));
+    background: linear-gradient(to right,rgb(77, 77, 77), rgb(178, 177, 179));
 } 
  #cabecalho{
     text-align: center;
-    background: linear-gradient(to right, rgb(240, 110, 110), rgb(229, 150, 240) );
+    background: linear-gradient(to right, rgb(178, 177, 179) , rgb(77, 77, 77));
     border-radius: 0px 50px 0px 50px ;
 }
  #menuprincipal li{  
@@ -40,11 +40,20 @@ body{
 }
 #conteudo{
     margin-left:30%;
-    border:1px solid black;
 }
-#nossarede{
-    /*margin-left: 30%;*/
-    border:1px solid black;
+#conteudo p{
+    text-align:justify;
+}
+#nossarede li{
+    list-style: none;
+    border: 1px solid rgb(102, 101, 101);
+    border-radius:10px;
+    margin:3px;
+}
+#nossarede img{
+    width:15%;
+    border: 0.5px solid rgb(133, 131, 131);
+    border-radius:50%;
 }
 #rodape{
     text-align: center
