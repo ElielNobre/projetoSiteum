@@ -1,9 +1,9 @@
 body{
-    background:rgb(179, 45, 89);
+    background: linear-gradient(to right, rgb(229, 150, 240) , rgb(240, 110, 110));
 } 
  #cabecalho{
     text-align: center;
-    background:rgb(209, 121, 151);
+    background: linear-gradient(to right, rgb(240, 110, 110), rgb(229, 150, 240) );
     border-radius: 0px 50px 0px 50px ;
 }
  #menuprincipal li{  
@@ -36,12 +36,15 @@ body{
 #corpo{
     display:grid;
     grid-template-columns:60% 25%;
+   
 }
 #conteudo{
     margin-left:30%;
+    border:1px solid black;
 }
 #nossarede{
-    margin-left: 30%;
+    /*margin-left: 30%;*/
+    border:1px solid black;
 }
 #rodape{
     text-align: center
