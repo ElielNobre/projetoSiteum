@@ -1,9 +1,9 @@
 body{
-    background: rgb(162, 238, 221);
+    background: rgb(146, 196, 211);
 }
 section{
     border: 1px solid black;
-    box-shadow: 10px 10px 10px 10px rgba(120,120,120,0.4);
+    box-shadow: 10px 10px 10px 10px rgba(40, 92, 189, 0.541);
     border-radius: 10px;
     margin: 10%;    
     padding:2%;

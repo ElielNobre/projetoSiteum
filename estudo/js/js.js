@@ -42,7 +42,7 @@ function parimpar(n){
 }
 
 console.log(parimpar(1001))*/
-
+/*
 function soma(n1=0,n2=0){
     return n1 + n2
 }
@@ -64,5 +64,11 @@ function fatorial(num){
 }
 
 console.log(`O fatorial de 5 é: ${fatorial(5)}`)
+*/
 
+var animal = ['Lion'];
+
+animal.push('Cat')
+animal.push('Dog')
+console.log(`${animal}`);
 
