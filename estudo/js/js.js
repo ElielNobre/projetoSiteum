@@ -64,11 +64,27 @@ function fatorial(num){
 }
 
 console.log(`O fatorial de 5 é: ${fatorial(5)}`)
-*/
+
 
 var animal = ['Lion'];
 
 animal.push('Cat')
 animal.push('Dog')
 console.log(`${animal}`);
+const numeros = [0, 1, 2, 3, 4, 5];
+let i = numeros.length - 1;
+
+do {
+  console.log(`${numeros.reverse()}`)
+  i--;
+} while(numeros < i);*/
+const tags = [ "Python", "C++", "F#" ];
+
+if (tags.length >= 3) {
+  for (let i = 0; i <= 2; i++) {
+    console.log(tags[i]);
+  }
+} else {
+  console.log("Insira pelo menos 3 tags");
+}
 
