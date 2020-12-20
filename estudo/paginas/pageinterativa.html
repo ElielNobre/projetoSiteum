@@ -8,17 +8,18 @@
 </head>
 <body>
     <h1>Projeto de Site Interativo</h1>
-    <p>A proposta dessa página é construir uma página totalmente interativa; usando esse formulario abaixo.</p>
+    <p>A proposta dessa página é apresentar diversos projetos.</p>    
     <fieldset>
         
-        <form>
-            <h3>Formulario</h3>
-            <p>Como deseja configurar o site?</p>
-        Digite seu nome: <input type="text" id="nome"><br/>
-        Selecione a cor de funda do site entre as opções:<input type="text" id="cordefundo">
-        <br/>
-        <br/>
-        <input type="submit" value="Configurar">
+    <form>
+        <h3>Equação de 2º grau.</h3>
+            <p>Preencha os valores de A, B e C.</p>
+    <p>
+        <input id="a" class="equacao" type="number" style="width:35px;" placeholder="a">x<sup>2</sup>
+        <input id="b" class="equacao" type="number" style="width:35px;" placeholder="b">.x 
+        <input id="c" class="equacao" type="number" style="width:35px;" placeholder="c"> = 0
+    </p>
+        <input type="submit" value="Calcular" onclick="calcular()">
    
         </form>
     </fieldset>
