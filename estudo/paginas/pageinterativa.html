@@ -15,16 +15,19 @@
         <h3>Equação de 2º grau.</h3>
             <p>Preencha os valores de A, B e C.</p>
     <p>
-        <input id="a" class="equacao" type="number" style="width:35px;" placeholder="a">x<sup>2</sup>
-        <input id="b" class="equacao" type="number" style="width:35px;" placeholder="b">.x 
-        <input id="c" class="equacao" type="number" style="width:35px;" placeholder="c"> = 0
+        <input id="a" type="number" style="width:35px;">x<sup>2</sup>
+        <input id="b" type="number" style="width:35px;">.x 
+        <input id="c" type="number" style="width:35px;"> = 0
     </p>
-        <input type="submit" value="Calcular" onclick="calcular()">
-   
+        <input type="button" value="Calcular" onclick="calcular()">
+        <fieldset>
+            <div id="resultado">
+            </div>
+        </fieldset>
         </form>
     </fieldset>
 
-<script src="/jsEspecifico/piInteracao.js"></script>   
+<script src="jsEspecifico/piInteracao.js"></script>   
 </body>
 <div id="rodape"><a href="calculadora.html">Projeto calculadora</a></div>
 </html>

@@ -1,7 +1,18 @@
-var a = 3;
-var b = -7;
-var c = 4;
+var num1 = window.document.getElementById('a');
+var num2 = window.document.getElementById('b');
+var num3 = window.document.getElementById('c');
+var resp = window.document.getElementById('resultado');
 
+var a= Number(num1.value)
+var b= Number(num2.value)
+var c= Number(num3.value)
+
+function calcular(){
+    resp.innerHTML +=`O valor de a: ${a}<br/>O valor de b: ${b}<br/>O valor de c: ${c}`
+}
+     /*`O valor de a: ${a}<br/>O valor de b: ${b}<br/>O valor de c: ${c}`;*/
+
+/*
 var delta = (Math.pow(b,2))-(4*a*c)
 
 console.log(delta)
@@ -18,3 +29,4 @@ console.log(delta)
     }else{
         console.log('Não é um número real por causa do Delta')
     }
+*/
