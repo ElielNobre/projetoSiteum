@@ -23,13 +23,53 @@ var c= Number(num3.value)
 
 }
    
-var canvas = document.getElementById("meuRetangulo");
-var context = canvas.getContext("2d")
+var canvas = document.getElementById("TeladeDesenho");
+var tela = canvas.getContext("2d")
 
-context.beginPath();
-context.moveTo(20,20);
-context.lineTo(200,20);
-context.lineTo(200,100);
-context.lineTo(20,100);
-context.lineTo(20,20);
-context.stroke(); //draw path
+function desenha(){
+    tela.fillRect(25,25,100,100)
+}
+/*
+var stage = document.createElement("canvas")
+stage.width = "200";
+stage.height = "200";
+stage.style.background= "rgba(0,0,0,1)";
+document.body.appendChild(stage);
+var cnv= stage.getContext("2d");
+var w = stage.width;
+var h = stage.height;
+var r = 30;
+var angle = 1;
+var limite = 20;
+var colorPacMan= "yellow";
+var opening = true;
+var interval = 10;
+
+function desenhar(){
+cnv.fillStyle = "black";
+cnv.strokeStyle = "black";
+cnv.lineWidth = 0; 
+cnv.arc(w/2, h/2, r, 0, Math.PI*2);
+cnv.stroke();
+cnv.fill();
+ang = (Math.PI/180)*angle;
+cnv.beginPath();
+cnv.fillStyle = colorPacMan;
+cnv.strokeStyle = colorPacMan;
+cnv.lineWidth = 40; 
+cnv.arc(w/2, h/2, r-10, ang, -ang, false);
+cnv.stroke();
+}
+function animate(){
+  setInterval(function(){
+    desenhar();
+    if(opening)
+      ++angle;
+      else
+      --angle;
+    
+    if(angle <= 1 || angle >= limite)
+      opening = angle <= 1 ? true : false; 
+  },interval);
+}
+animate();*/
