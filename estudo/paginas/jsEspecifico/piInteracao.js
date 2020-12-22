@@ -22,17 +22,9 @@ var c= Number(num3.value)
     }
 
 }
-   
-var canvas = document.getElementById("TeladeDesenho");
-var tela = canvas.getContext("2d")
-
-function desenha(){
-    tela.fillRect(25,25,100,100)
-}
-/*
-var stage = document.createElement("canvas")
-stage.width = "200";
-stage.height = "200";
+var stage = window.document.getElementById("canvas")
+stage.width = "500";
+stage.height = "100";
 stage.style.background= "rgba(0,0,0,1)";
 document.body.appendChild(stage);
 var cnv= stage.getContext("2d");
@@ -72,4 +64,3 @@ function animate(){
       opening = angle <= 1 ? true : false; 
   },interval);
 }
-animate();*/
