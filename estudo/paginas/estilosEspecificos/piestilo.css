@@ -36,7 +36,6 @@ fieldset input{
 }
 canvas{
     border:1px solid black;
-    margin: auto 25% auto;
-    width: 150;
-    height: 150;
+    margin: 2% 25% auto;
+    width: 50%;
 }
