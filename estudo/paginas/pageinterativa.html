@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="estilosEspecificos/piestilo.css">
     <title>Document</title>
 </head>
-<body onload="animate()">
+<body>
     <h1>Projeto de Site Interativo</h1>
     <p>A proposta dessa página é apresentar diversos projetos.</p>    
     <fieldset>
@@ -27,12 +27,13 @@
         </form>
     </fieldset>
     <p>Projetos com uso de canvas</p>
-    
+    <input type="button" value="Desenhar" id="botaocanvas" onclick="desenhar()"> 
     <canvas id="canvas">
               
     </canvas>
 
-<script src="jsEspecifico/piInteracao.js"></script>   
+<!--<script src="jsEspecifico/piInteracao.js"></script>  -->
+<script src="jsEspecifico/geometria.js"></script>   
 </body>
 <div id="rodape"><a href="calculadora.html">Projeto calculadora</a></div>
 </html>
