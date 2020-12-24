@@ -7,7 +7,7 @@ function calcular(){
 var a= Number(num1.value)
 var b= Number(num2.value)
 var c= Number(num3.value)
-
+    resp.innerHTML = ``
     resp.innerHTML +=`O valor de a: ${a}<br/>O valor de b: ${b}<br/>O valor de c: ${c}<br/>`
     var delta = (Math.pow(b,2))-(4*a*c)
     resp.innerHTML += `O valor de Delta é: ${delta}<br/>`
