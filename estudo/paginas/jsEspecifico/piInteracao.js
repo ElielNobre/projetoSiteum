@@ -20,10 +20,22 @@ var c= Number(num3.value)
         resp.innerHTML += `O valor de x1: ${xx1}<br/>`
         resp.innerHTML += `O valor de x2: ${xx2}<br/>`
     }
-
 }
-var stage = window.document.getElementById("canvas")
-stage.width = "500";
+
+/*
+function desenhar(){
+      var tela = window.document.getElementById("canvas");
+        if(tela.getContext){
+        var contexto = tela.getContext("2d");
+
+        contexto.fillStyle = "rgb(200,0,0)";
+        contexto.fillRect (10, 10, 55, 50);
+
+        contexto.fillStyle = "rgba(0,0,200,0.5)";
+        contexto.fillRect (30,30,55,50);
+      }
+  }
+/*stage.width = "500";
 stage.height = "100";
 stage.style.background= "rgba(0,0,0,1)";
 document.body.appendChild(stage);
