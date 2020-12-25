@@ -30,24 +30,40 @@
     <fieldset>
     <form>
         <p>
-            Área do quadrado   
+            Área do quadrado ou retangulo 
         </p>
         <p>
-        Medida do Cateto 1:<input type="text" id="ct1" placeholder="entre 1 e 100"><br/>
-        Medida do Cateto 2:<input type="text" id="ct2" placeholder="entre 1 e 100">
+        Medida do Cateto 1:<input type="number" id="ct1" placeholder="entre 1 e 100"><br/>
+        Medida do Cateto 2:<input type="number" id="ct2" placeholder="entre 1 e 100">
         </p>
-        <div id="mensagem"></div>
     </form>
     
     <input type="button" value="Desenhar" id="botaocanvas" onclick="desenhar()"> 
     <input type="button" value="Limpar" id="botaolimpar" onclick="limpartela()"> 
+    <div id="mensagem"></div>
     </fieldset>
     <canvas id="canvas">
               
     </canvas>
+    <hr>
+    <fieldset>
+        <p>Área do Circulo</p>
+        <form>
+            <p>Medida do raio do circulo:
+            <input type="number" id="raio" placeholder="entre 1 e 50">
+            </p>
+            <p style="color: red">*Acima de 180 pode não aparecer*</p>
+            <input type="button" id="braio" value="Desenhar" onclick="desenharcirculo()">
+            <input type="button" id="limparcirculo" value="Limpar" onclick="limparcirculo()">
+        </form>
+    </fieldset>
+    <canvas id="canvas2">
+
+    </canvas>
 
 <script src="jsEspecifico/piInteracao.js"></script> 
-<script src="jsEspecifico/geometria.js"></script>*/  
+<script src="jsEspecifico/retaquad.js"></script> 
+<script src="jsEspecifico/circulo.js"></script> 
 </body>
 <div id="rodape"><a href="calculadora.html">Projeto calculadora</a></div>
 </html>

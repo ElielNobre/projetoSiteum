@@ -2,7 +2,7 @@ var tela = document.getElementById("canvas");
 var mensagem = document.getElementById("mensagem")
 var cat1 = document.getElementById("ct1");
 var cat2 = document.getElementById("ct2");
-  
+
 function desenhar() {    
     if (tela.getContext) {
       var contexto = tela.getContext("2d");
@@ -24,3 +24,5 @@ function limpartela(){
   var contexto = tela.getContext("2d");
   contexto.clearRect(0,0,2000,2000);
 }
+
+
