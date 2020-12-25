@@ -18,8 +18,6 @@ function desenhar() {
       mensagem.innerHTML = `A área do quadrado é: ${quad} pixels.<br/>`
       mensagem.innerHTML += `A área do quadrado é: ${tria} pixels.<br/>`
       mensagem.innerHTML += `O valor da hipotenusa ou da diagonal do retangulo é: ${hp} pixels.`
-     /* contexto.fillStyle = "rgba(0, 0, 200, 0.5)";
-      contexto.fillRect (30, 30, 55, 50);*/
     }
   }
 function limpartela(){
