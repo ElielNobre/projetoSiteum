@@ -15,9 +15,11 @@ var c= Number(num3.value)
     if (delta >= 0){
         var x1 = ((b*(-1))+(Math.sqrt(delta)))/(2*a)
         var x2 = ((b*(-1))-(Math.sqrt(delta)))/(2*a)
-        let xx1 = parseFloat(x1)
-        let xx2 = parseFloat(x2)
+        let xx1 = parseFloat(x1.toFixed(2))
+        let xx2 = parseFloat(x2.toFixed(2))
         resp.innerHTML += `O valor de x1: ${xx1}<br/>`
         resp.innerHTML += `O valor de x2: ${xx2}<br/>`
+    } else if(delta < 0){
+        resp.innerHTML +=`O valor do delta não é real`;
     }
 }
