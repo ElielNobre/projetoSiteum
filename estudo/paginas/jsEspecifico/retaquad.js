@@ -1,5 +1,5 @@
 var tela = document.getElementById("canvas");
-var mensagem = document.getElementById("mensagem")
+/*var mensagem = document.getElementById("mensagem")
 var cat1 = document.getElementById("ct1");
 var cat2 = document.getElementById("ct2");
 
@@ -19,9 +19,10 @@ function desenhar() {
       mensagem.innerHTML += `A área do quadrado é: ${tria} pixels.<br/>`
       mensagem.innerHTML += `O valor da hipotenusa ou da diagonal do retangulo é: ${hp} pixels.`
     }
-  }
+  }*/
 function limpartela(){
-  var contexto = tela.getContext("2d");
+  /*var contexto = tela.getContext("2d");*/
+  var contexto = tela.getContext("2d")
   contexto.clearRect(0,0,2000,2000);
 }
 
