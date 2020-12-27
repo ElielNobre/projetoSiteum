@@ -50,17 +50,24 @@
         <p>Área do Circulo</p>
         <form>
             <p>Medida do raio do circulo:
-            <input type="number" id="raio" placeholder="entre 1 e 50">
+            <input type="number" id="raio" placeholder="1 a 50">
             </p>
             <p style="color: red">*Acima de 180 pode não aparecer*</p>
             <input type="button" id="braio" value="Desenhar" onclick="desenharcirculo()">
-            <input type="button" id="limparcicle" value="Limpar" onclick="limparcirculo()">
+            <input type="reset" id="limparcicle" value="Limpar" onclick="limparcirculo()">
+            <div id="respcir"></div>
         </form>
     </fieldset>
     <canvas id="canvas2">
 
     </canvas>
-
+    <p>Tive problemas com as variáveis nessa ultima formula em javascripte,
+       na variável raio do circulo, toda vez que era atribuido um alto 
+       valor, o valores menores seguites não eram desenhados, o maior 
+       valor era sobreposto, mas inserir o camando de recarregar página 
+       na função de limpar tela e consegui contornar o problema mas sei 
+       que não é o ideal.</p>
+    
 <script src="jsEspecifico/piInteracao.js"></script> 
 <script src="jsEspecifico/retaquad.js"></script> 
 <script src="jsEspecifico/circulo.js"></script> 

@@ -1,5 +1,5 @@
 var tela = document.getElementById("canvas");
-/*var mensagem = document.getElementById("mensagem")
+var mensagem = document.getElementById("mensagem")
 var cat1 = document.getElementById("ct1");
 var cat2 = document.getElementById("ct2");
 
@@ -15,13 +15,12 @@ function desenhar() {
     
       contexto.fillStyle = "rgb(20,20,10)";
       contexto.fillRect(20, 20, c1, c2);
-      mensagem.innerHTML = `A área do quadrado é: ${quad} pixels.<br/>`
-      mensagem.innerHTML += `A área do quadrado é: ${tria} pixels.<br/>`
-      mensagem.innerHTML += `O valor da hipotenusa ou da diagonal do retangulo é: ${hp} pixels.`
+      mensagem.innerHTML = `A área do quadrilátero é: ${quad} pixels.<br/>`
+      mensagem.innerHTML += `A área do quadrilátero é: ${tria} pixels.<br/>`
+      mensagem.innerHTML += `O valor da hipotenusa ou da diagonal do quadrilátero é: ${hp} pixels.`
     }
-  }*/
+  }
 function limpartela(){
-  /*var contexto = tela.getContext("2d");*/
   var contexto = tela.getContext("2d")
   contexto.clearRect(0,0,2000,2000);
 }
