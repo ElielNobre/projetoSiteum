@@ -1,6 +1,16 @@
 body{
     background:rgb(137, 161, 126);
 }
+#menu ul li{
+    display:inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:2px;
+    padding:3px;
+}
+#menu1,#menu2,#menu3,#menu4{
+    display: none;
+}
 h1, p{
     margin-left:5%;
 }

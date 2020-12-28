@@ -7,64 +7,98 @@
     <title>Document</title>
 </head>
 <body>
+<div id="menu">
     <h1>Projeto de Site Interativo</h1>
     <p>A proposta dessa página é apresentar diversos projetos.</p>    
-    <fieldset>
-        
-    <form>
-        <h3>Equação de 2º grau.</h3>
-            <p>Preencha os valores de A, B e C.</p>
-    <p>
-        <input id="a" type="number" style="width:35px;">x<sup>2</sup>
-        <input id="b" type="number" style="width:35px;">.x 
-        <input id="c" type="number" style="width:35px;"> = 0
-    </p>
-        <input type="button" value="Calcular" onclick="calcular()">
-        <fieldset>
-            <div id="resultado">
-            </div>
-        </fieldset>
-        </form>
-    </fieldset>
-    <p>Projetos com uso de canvas</p>
-    <fieldset>
-    <form>
-        <p>
-            Área do quadrado ou retangulo 
-        </p>
-        <p>
-        Medida do Cateto 1:<input type="number" id="ct1" placeholder="entre 1 e 100"><br/>
-        Medida do Cateto 2:<input type="number" id="ct2" placeholder="entre 1 e 100">
-        </p>
-    </form>
-    
-    <input type="button" value="Desenhar" id="botaocanvas" onclick="desenhar()"> 
-    <input type="button" value="Limpar" id="botaolimpar" onclick="limpartela()"> 
-    <div id="mensagem"></div>
-    </fieldset>
-    <canvas id="canvas">
-              
-    </canvas>
-    <hr>
-    <fieldset>
-        <p>Área do Circulo</p>
-        <form>
-            <p>Medida do raio do circulo:
-            <input type="number" id="raio" placeholder="1 a 50"><br/>
-            Valor de &pi; é aproximadamente 3.14.
-            </p>
-            <p style="color: red">*Acima de 80 pode não aparecer*</p>
-            <input type="button" id="braio" value="Desenhar" onclick="desenharcirculo()">
-            <input type="reset" id="limparcicle" value="Limpar" onclick="limparcirculo()">
-            <div id="respcir"></div>
-        </form>
-    </fieldset>
-    <canvas id="circulo">
+    <h3>Escolha uma opção abaixo:</h3>
 
-    </canvas>
+    <input type="button" onclick="mostrar('menu1')" value="Equação de 2º grau">
+    <input type="button" value="Area do retangulo" onclick="mostrar('menu2')">
+    <input type="button" value="Area do Circulo" onclick="mostrar('menu3')">
+    <input value="Area do Triangulo" type="button" onclick="mostrar('menu4')">
+</div>    
+    <div id="menu1">
+
+            <fieldset>
+                
+            <form>
+                <h3>Equação de 2º grau.</h3>
+                    <p>Preencha os valores de A, B e C.</p>
+            <p>
+                <input id="a" type="number" style="width:35px;">x<sup>2</sup>
+                <input id="b" type="number" style="width:35px;">.x 
+                <input id="c" type="number" style="width:35px;"> = 0
+            </p>
+                <input type="button" value="Calcular" onclick="calcular()">
+                <fieldset>
+                    <div id="resultado">
+                    </div>
+                </fieldset>
+                </form>
+   
+            </fieldset> 
+    </div> 
+    <div id="menu2">
+            <fieldset>
+            <form>
+                <p>
+                    Área do quadrado ou retangulo 
+                </p>
+                <p>
+                Medida da altura:<input type="number" id="ct1" placeholder="entre 1 e 100"><br/>
+                Medida da largura:<input type="number" id="ct2" placeholder="entre 1 e 100">
+                </p>
+            </form>
+            
+            <input type="button" value="Desenhar" id="botaocanvas" onclick="desenhar()"> 
+            <input type="button" value="Limpar" id="botaolimpar" onclick="limpartela()"> 
+            <div id="mensagem"></div>
+            </fieldset>
+            <canvas id="canvas">
+                    
+            </canvas>
+    </div>
+    <div id="menu3">
+            <fieldset>
+                <p>Área do Circulo</p>
+                <form>
+                    <p>Medida do raio do circulo:
+                    <input type="number" id="raio" placeholder="1 a 50"><br/>
+                    Valor de &pi; é aproximadamente 3.14.
+                    </p>
+                    <p style="color: red">*Acima de 80 pode não aparecer*</p>
+                    <input type="button" id="braio" value="Desenhar" onclick="desenharcirculo()">
+                    <input type="reset" id="limparcicle" value="Limpar" onclick="limparcirculo()">
+                    <div id="respcir"></div>
+                </form>
+            </fieldset>
+            <canvas id="circulo">
+
+            </canvas>
+    </div> 
+    <div id="menu4">
+            <fieldset>
+                <p>Área do Triangulo</p>
+                <form>
+                    <p>
+                    Medida do cateto 1:
+                    <input type="number" id="cateto1" placeholder="1 a 50"><br/>
+                    Medida do cateto 2:
+                    <input type="number" id="cateto2" placeholder="1 a 50"><br/>
+                    </p>
+                    <input type="button" id="draw" value="Desenhar" onclick="desenhartri()">
+                    <input type="reset" value="Limpar" onclick="limpartri()">
+                    <div id="resptri"></div>
+                </form>
+            </fieldset>
+            <canvas id="triangulo">
+
+            </canvas>
+    </div>
 <script src="jsEspecifico/piInteracao.js"></script> 
 <script src="jsEspecifico/retaquad.js"></script> 
 <script src="jsEspecifico/circulo.js"></script> 
+<script src="jsEspecifico/controlmenu.js"></script> 
 </body>
 <div id="rodape"><a href="calculadora.html">Projeto calculadora</a><a href="ppurocanvas.html">ProjetoPuroCanvas</a></div>
 </html>
