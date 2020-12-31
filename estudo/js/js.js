@@ -86,7 +86,7 @@ if (tags.length >= 3) {
   }
 } else {
   console.log("Insira pelo menos 3 tags");
-}*/
+}*//*
 var a = 3;
 var b = -7;
 var c = 4;
@@ -107,8 +107,21 @@ console.log(delta)
     }else{
         console.log('Não é um número real por causa do Delta')
     }
-
-
+*/
+function somarQuadrado(numeros) {
+    let i = 0;
+    let total = 0;
+  
+     while(i < numeros.length){
+      total += numeros[i] * numeros[i];
+      i++;
+    }
+  
+    console.log(total);
+  }
+  
+  const numeros = [ 1,2,3,4,5];
+  somarQuadrado(numeros)
 
 
 
