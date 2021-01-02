@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <linK rel="stylesheet" href="estilosEspecificos/estiloaula.css">
+    <title>Document</title>
+</head>
+<body>
+   <section>
+       <h1>Carteira</h1>
+       <div>
+           <h3>Entradas</h3>
+           <p>
+                Entrou:<input type="number" id="enter">
+           </p>
+        </div>
+        <div>
+            <h3>Saídas</h3>
+            <p>
+                Saiu: &nbsp; <input type="number" id="leave">
+            </p>
+        </div>
+        <input type="button" value="Verificar Saldo" id="lancar" onclick="escrever()">
+        <fieldset>
+            <h3>Saldo</h3>
+            <p>Saldo Anterior
+            <div id="balanceant">
+
+            </div>
+            </p>
+            <h4>Saldo Atual</h4>
+            <p>
+                Saldo:<br><div id="balance"></div>
+            </p>
+        </fieldset>   
+        <div id="teste"> </div>
+   </section>
+
+   <footer >
+    <a href="../../index.html">Tela Inicial</a>
+   </footer> 
+   <script src="jsEspecifico/carteira.js"></script>
+</body>
+</html>

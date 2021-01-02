@@ -6,7 +6,7 @@ header{
     color:white;
     text-align: center;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     text-align: center;
 }
 h3#mes{
@@ -26,9 +26,10 @@ section, #exercicio{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.527);
 }
 footer{
-    color: white;
+    color: rgb(23, 55, 233);
     text-align: center; 
     font-family: italic;
+    margin:30px;
 }
 footer a{
     border: 1px solid;
